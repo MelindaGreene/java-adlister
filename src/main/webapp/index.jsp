@@ -11,5 +11,14 @@
     <div class="container">
         <h1>Welcome to the Adlister!</h1>
     </div>
+
+    <c:forEach var="ad" items="${ads}">
+        <ul class="ad">
+            <li>Title: ${ad.title}</li>
+            <li>User: ${ad.userId}</li>
+            <li>description: ${ad.description}</li>
+        </ul>
+    </c:forEach>
+
 </body>
 </html>
